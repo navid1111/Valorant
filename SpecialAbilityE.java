@@ -1,3 +1,3 @@
-public interface SpecialAbilityE {
+public interface SpecialAbilityE  {
     public void useSpecialAbilityE();
 }

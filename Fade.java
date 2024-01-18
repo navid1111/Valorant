@@ -9,6 +9,7 @@ public class Fade extends ValorantCharacter implements SpecialAbilityE,ISpecialA
                 " Upon hitting the ground, the orb will expand and tether opponents who are caught in it," +
                 " while also deafening and decaying the,.");
 
+
     }
 
     @Override
@@ -17,6 +18,7 @@ public class Fade extends ValorantCharacter implements SpecialAbilityE,ISpecialA
                 " The Prowler will lock onto any enemies or trails in their frontal vision cone and chase them, nearsighting them if it reaches them." +
                 "Hold the fire button to steer the Prowler in the direction of your crosshair.");
 
+
     }
 
     @Override
@@ -24,6 +26,7 @@ public class Fade extends ValorantCharacter implements SpecialAbilityE,ISpecialA
         System.out.println("Haunt – Equip a nightmarish entity." +
                 " Fire to throw the orb which will plummet to the ground after a set amount of time. Upon hitting the ground, the orb will turn into a nightmarish entity that will reveal the location of enemies caught in its line of sight." +
                 " Enemies can destroy this entity. Re-use the ability to drop the projectile early in-flight.");
+
 
     }
 

@@ -9,6 +9,7 @@ public class Cypher extends ValorantCharacter implements SpecialAbilityE,ISpecia
                 " Triggering enemies are restrained and revealed for a short time. If the trap isn’t destroyed, " +
                 "it activates to daze the trapped victim. It can be picked up and redeployed.");
 
+
     }
 
     @Override
@@ -16,6 +17,7 @@ public class Cypher extends ValorantCharacter implements SpecialAbilityE,ISpecia
         System.out.println("Cyber Cage – Toss out a remote activation trap. " +
                 "Reactivate to create a cage that blocks vision and plays an audio cue when an enemy passes through." +
                 ". Look at a trap and press “use” to detonate it.");
+
 
     }
 

@@ -1,4 +1,4 @@
-public interface IUltimate {
+public interface IUltimate  {
     public void useUltimate();
 
 }

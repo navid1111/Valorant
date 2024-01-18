@@ -16,6 +16,7 @@ public class Breach extends ValorantCharacter implements SpecialAbilityE,ISpecia
                 "The charge detonates to blind all players looking at it." +
                 " Players looking directly at the flash are fully blinded for two seconds.");
 
+
     }
 
     @Override
@@ -23,6 +24,7 @@ public class Breach extends ValorantCharacter implements SpecialAbilityE,ISpecia
         System.out.println("Ultimate: Rolling Thunder – Equip a seismic charge." +
                 " Fire to send a cascading quake through all terrain in a large cone." +
                 " The quake dazes and knocks up anyone caught in it. Players caught are dazed for six seconds.");
+
 
     }
 

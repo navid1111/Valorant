@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class DeathMatch {
     private static final int MIN_DAMAGE = 0;
-    private static final int MAX_DAMAGE = 20;
+    private static final int MAX_DAMAGE = 60;
 
     private static int getRandomDamage() {
         return new Random().nextInt(MAX_DAMAGE - MIN_DAMAGE + 1) + MIN_DAMAGE;
@@ -14,18 +14,87 @@ class DeathMatch {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the Fighting Game!");
-
-    
-
-
-
+        ValorantCharacter valorantCharacter1;
+        ValorantCharacter valorantCharacter2;
+        System.out.println("Player 1 enter your name");
 
 
 
-        Astra playerOne=new Astra("navid");
-        Breach playerTwo=new Breach("oni");
+
+
+
+
+
+
+       
+
+        String name=scanner.next();
+
+
+        System.out.println("Player 1 Choose your character");
+        String character=scanner.next();
+        switch (character){
+            case "Astra":
+                valorantCharacter1=new Astra(name);
+                break;
+            case  "BrimStone":
+                valorantCharacter1=new Brimstone(name);
+                break;
+
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + character);
+        }
+
+
+
+
+
+        ValorantCharacter playerOne=valorantCharacter1;
+
+
+
+
+
+
+        System.out.println("Player 2 enter your name");
+
+
+
+
+
+
+
+
+
+
+
+        String name2=scanner.next();
+
+
+        System.out.println("Player 1 Choose your character");
+        String character2=scanner.next();
+        switch (character2){
+            case "Astra":
+                valorantCharacter2=new Astra(name);
+                break;
+            case  "BrimStone":
+                valorantCharacter2=new Brimstone(name);
+                break;
+
+
+            default:
+                throw new IllegalStateException("Unexpected value: " + character);
+        }
+
+
+
+
+
+        ValorantCharacter playerTwo=valorantCharacter1;
+
+       
         ValorantCharacter currentPlayer=playerOne;
-
         // Player 1 starts
 
         while (playerOne.isAlive() && playerTwo.isAlive()) {

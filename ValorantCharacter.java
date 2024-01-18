@@ -1,7 +1,8 @@
 
 import java.util.Random;
 
-public class ValorantCharacter  {
+public abstract class ValorantCharacter  {
+
     private String name;
     Random random = new Random();
 
@@ -51,6 +52,10 @@ public class ValorantCharacter  {
     }
 
     // Method to simulate taking damage
+    public abstract void getCharacterInfo();
+    public abstract void useSpecialAbilityC();
+    public abstract void useSpecialAbilityE();
+    public abstract  void useUltimate();
 
 
 

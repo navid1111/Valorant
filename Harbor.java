@@ -1,4 +1,4 @@
-public class Harbor extends ValorantCharacter implements SpecialAbilityE,ISpecialAbilityC,IUltimate,IGetCharacterInfo{
+public class Harbor extends ValorantCharacter implements IGetCharacterInfo{
     public Harbor(String name) {
         super(name);
     }

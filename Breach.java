@@ -1,4 +1,4 @@
-public class Breach extends ValorantCharacter implements SpecialAbilityE,ISpecialAbilityC,IUltimate,IGetCharacterInfo{
+public class Breach extends ValorantCharacter implements IGetCharacterInfo {
     public Breach(String name) {
         super(name);
     }
@@ -30,6 +30,17 @@ public class Breach extends ValorantCharacter implements SpecialAbilityE,ISpecia
 
     @Override
     public void getCharacterInfo() {
+        System.out.println("Ultimate: Rolling Thunder – Equip a seismic charge." +
+                " Fire to send a cascading quake through all terrain in a large cone." +
+                " The quake dazes and knocks up anyone caught in it. Players caught are dazed for six seconds.");
+
+        System.out.println("SpecialAbilityC :Flashpoint – Equip a blinding charge. Fire the charge to set a fast-acting burst through a wall. " +
+                "The charge detonates to blind all players looking at it." +
+                " Players looking directly at the flash are fully blinded for two seconds.");
+
+        System.out.println("SpecialAbilityE :Fire a three-pulse burst charge through a wall." +
+                " Each burst deals 60 damage.");
+
 
     }
 }

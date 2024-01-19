@@ -1,0 +1,11 @@
+@startuml
+class Breach {
++ void useSpecialAbilityE()
++ void useSpecialAbilityC()
++ void useUltimate()
++ void getCharacterInfo()
+}
+
+
+ValorantCharacter <|-- Breach
+@enduml

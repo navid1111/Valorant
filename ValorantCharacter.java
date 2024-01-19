@@ -4,6 +4,7 @@ import java.util.Random;
 public abstract class ValorantCharacter  {
 
     private String name;
+    IShoot weapon;
     Random random = new Random();
 
     private int health;
@@ -18,6 +19,7 @@ public abstract class ValorantCharacter  {
         this.health = 100;
         this.armor = 0;
         this.bulletsInMagazine = 25;
+        this.weapon=new ClassicSideArm("classic");
 
     }
 
@@ -47,8 +49,8 @@ public abstract class ValorantCharacter  {
 
     // Method to simulate shooting
     public int shoot() {
-        int damageDealt = random.nextInt(51);
-        return damageDealt;
+        System.out.println();
+      return weapon.shoot();
     }
 
     // Method to simulate taking damage

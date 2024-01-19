@@ -1,0 +1,10 @@
+@startuml
+class DeathMatch {
+- {static} int MIN_DAMAGE
+- {static} int MAX_DAMAGE
+- {static} int getRandomDamage()
++ {static} void printAvailableCharacters()
++ {static} void printCharacterOptions()
++ {static} void main(String[])
+}
+@enduml

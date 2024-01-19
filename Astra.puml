@@ -1,0 +1,29 @@
+@startuml
+class Astra {
++ void useSpecialAbilityE()
++ void useSpecialAbilityC()
++ void useUltimate()
++ void getCharacterInfo()
+}
+
+
+ValorantCharacter <|-- Astra
+
+class DeathMatch {
+- {static} int MIN_DAMAGE
+- {static} int MAX_DAMAGE
+- {static} int getRandomDamage()
++ {static} void printAvailableCharacters()
++ {static} void printCharacterOptions()
++ {static} void main(String[])
+}
+class Breach {
++ void useSpecialAbilityE()
++ void useSpecialAbilityC()
++ void useUltimate()
++ void getCharacterInfo()
+}
+
+
+ValorantCharacter <|-- Breach
+@enduml

@@ -1,4 +1,4 @@
-public class Cypher extends ValorantCharacter implements SpecialAbilityE,ISpecialAbilityC,IUltimate,IGetCharacterInfo{
+public class Cypher extends ValorantCharacter implements IGetCharacterInfo{
     public Cypher(String name) {
         super(name);
     }
@@ -30,6 +30,17 @@ public class Cypher extends ValorantCharacter implements SpecialAbilityE,ISpecia
 
     @Override
     public void getCharacterInfo() {
+        System.out.println("Ultimate: Neural Theft – Extract information from the corpse of an enemy, " +
+                "revealing the location of their living allies.");
+
+        System.out.println("SpecialAbilityC : Cyber Cage – Toss out a remote activation trap. " +
+                "Reactivate to create a cage that blocks vision and plays an audio cue when an enemy passes through." +
+                ". Look at a trap and press “use” to detonate it.");
+
+        System.out.println("SpecialAbilityE : Trapwire – Place a stealthed tripwire between two walls." +
+                " Triggering enemies are restrained and revealed for a short time. If the trap isn’t destroyed, " +
+                "it activates to daze the trapped victim. It can be picked up and redeployed.");
+
 
     }
 }
